@@ -89,9 +89,9 @@ const Hero = () => {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 1.2, duration: 1 }}
-          className="absolute bottom-10 left-1/2 -translate-x-1/2"
+          className="mt-12"
         >
-          <a href="#about" className="text-muted-foreground hover:text-primary transition-colors">
+          <a href="#about" className="text-muted-foreground hover:text-primary transition-colors inline-block">
             <ArrowDown size={24} className="animate-bounce" />
           </a>
         </motion.div>
