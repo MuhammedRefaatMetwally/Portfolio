@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
-import { Github, Linkedin, Mail, Phone, MapPin, ArrowDown } from "lucide-react";
+import { Github, Linkedin, Mail, MapPin, ArrowDown } from "lucide-react";
+import profileImg from "@/assets/profile.jpg";
 
 const Hero = () => {
   return (
@@ -16,9 +17,25 @@ const Hero = () => {
 
       <div className="relative z-10 text-center max-w-4xl mx-auto">
         <motion.div
+          initial={{ opacity: 0, scale: 0.8 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.7 }}
+          className="mb-6"
+        >
+          <div className="relative inline-block">
+            <div className="absolute -inset-1 rounded-full bg-gradient-to-br from-primary to-primary/40 blur-sm opacity-60" />
+            <img
+              src={profileImg}
+              alt="Muhammed Refaat"
+              className="relative w-32 h-32 md:w-40 md:h-40 rounded-full object-cover border-2 border-primary/30"
+            />
+          </div>
+        </motion.div>
+
+        <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.7 }}
+          transition={{ duration: 0.7, delay: 0.1 }}
         >
           <p className="font-mono text-primary text-sm md:text-base mb-4 tracking-widest uppercase">
             Full-Stack Software Engineer
