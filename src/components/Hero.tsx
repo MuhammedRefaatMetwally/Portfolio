@@ -1,7 +1,8 @@
 import { motion } from "framer-motion";
-import { Github, Linkedin, Mail, MapPin, ArrowDown, FileText } from "lucide-react";
-import { Dialog, DialogContent, DialogHeader, DialogTitle } from "@/components/ui/dialog";
+import { Github, Linkedin, Mail, MapPin, ArrowDown, FileText, Download } from "lucide-react";
+import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogDescription } from "@/components/ui/dialog";
 import { useState } from "react";
+import CvContent from "@/components/CvContent";
 
 const Hero = () => {
   const [cvOpen, setCvOpen] = useState(false);
@@ -110,13 +111,19 @@ const Hero = () => {
       <Dialog open={cvOpen} onOpenChange={setCvOpen}>
         <DialogContent className="max-w-3xl max-h-[85vh] overflow-y-auto">
           <DialogHeader>
-            <DialogTitle className="font-mono">My CV</DialogTitle>
+            <DialogTitle className="font-mono flex items-center justify-between">
+              My CV
+              <a
+                href="/Muhammed_Refaat_Resume.pdf"
+                download
+                className="inline-flex items-center gap-1.5 text-xs font-normal px-3 py-1.5 rounded-md bg-primary text-primary-foreground hover:bg-primary/90 transition-colors mr-6"
+              >
+                <Download size={14} /> Download
+              </a>
+            </DialogTitle>
+            <DialogDescription>Full-Stack Software Engineer Resume</DialogDescription>
           </DialogHeader>
-          <iframe
-            src="/Muhammed_Refaat_Resume.pdf"
-            className="w-full h-[70vh] rounded-md border border-border"
-            title="Muhammed Refaat CV"
-          />
+          <CvContent />
         </DialogContent>
       </Dialog>
     </section>
