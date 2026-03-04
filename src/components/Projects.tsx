@@ -4,7 +4,7 @@ import { ExternalLink, Github } from "lucide-react";
 
 const projects = [
   {
-    title: "DevLens",
+    title: "CodeAnalys",
     subtitle: "AI-Powered PR Code Review Platform",
     period: "Jan 2026 – Mar 2026",
     description:
@@ -16,8 +16,8 @@ const projects = [
     ],
     stack: ["NestJS", "Next.js", "TypeScript", "PostgreSQL", "Prisma", "BullMQ", "Redis", "Gemini AI", "Docker"],
     links: [
-      { label: "API", url: "#", icon: "github" },
-      { label: "Web", url: "#", icon: "github" },
+      { label: "Code", url: "https://github.com/MuhammedRefaatMetwally/CodeAnalys", icon: "github" },
+      { label: "Loom Demo", url: "https://www.loom.com/share/99d0a2fd047e4f7fadd21711af4a193a", icon: "github" },
     ],
   },
   {
@@ -49,9 +49,9 @@ const projects = [
     ],
     stack: ["NestJS", "Prisma", "Socket.io", "React", "dnd-kit", "Docker", "Cloudinary"],
     links: [
-      { label: "Live Demo", url: "#", icon: "external" },
-      { label: "Backend", url: "#", icon: "github" },
-      { label: "Frontend", url: "#", icon: "github" },
+      { label: "Live Demo", url: "https://bit.ly/4klbnAA", icon: "external" },
+      { label: "Backend", url: "https://github.com/MuhammedRefaatMetwally/task-management-api", icon: "github" },
+      { label: "Frontend", url: "https://github.com/MuhammedRefaatMetwally/task-management-nextjs", icon: "github" },
     ],
   },
 ];
