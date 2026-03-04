@@ -17,7 +17,7 @@ const projects = [
     stack: ["NestJS", "Next.js", "TypeScript", "PostgreSQL", "Prisma", "BullMQ", "Redis", "Gemini AI", "Docker"],
     links: [
       { label: "Code", url: "https://github.com/MuhammedRefaatMetwally/CodeAnalys", icon: "github" },
-      { label: "Loom Demo", url: "https://www.loom.com/share/99d0a2fd047e4f7fadd21711af4a193a", icon: "github" },
+      { label: "Loom Demo", url: "https://www.loom.com/share/99d0a2fd047e4f7fadd21711af4a193a", icon: "external" },
     ],
   },
   {
