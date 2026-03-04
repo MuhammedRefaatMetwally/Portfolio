@@ -27,7 +27,7 @@ const Hero = () => {
           className="mb-6"
         >
           <div className="relative inline-block">
-            <div className="absolute -inset-1 rounded-full bg-gradient-to-br from-primary to-primary/40 blur-sm opacity-60" />
+            <div className="absolute -inset-1 rounded-full bg-linear-to-br from-primary to-primary/40 blur-xs opacity-60" />
             <img
               src="/profile.jpg"
               alt="Muhammed Refaat"
@@ -82,11 +82,11 @@ const Hero = () => {
             className="flex items-center gap-2 px-4 py-2 rounded-lg bg-secondary text-secondary-foreground hover:bg-primary hover:text-primary-foreground transition-colors text-sm">
             <Mail size={16} /> Email
           </a>
-          <a href="https://linkedin.com/in/muhammed-refaat" target="_blank" rel="noopener noreferrer"
+          <a href="https://www.linkedin.com/in/muhammedrefaat" target="_blank" rel="noopener noreferrer"
             className="flex items-center gap-2 px-4 py-2 rounded-lg bg-secondary text-secondary-foreground hover:bg-primary hover:text-primary-foreground transition-colors text-sm">
             <Linkedin size={16} /> LinkedIn
           </a>
-          <a href="https://github.com/muhammed-refaat" target="_blank" rel="noopener noreferrer"
+          <a href="https://github.com/MuhammedRefaatMetwally" target="_blank" rel="noopener noreferrer"
             className="flex items-center gap-2 px-4 py-2 rounded-lg bg-secondary text-secondary-foreground hover:bg-primary hover:text-primary-foreground transition-colors text-sm">
             <Github size={16} /> GitHub
           </a>

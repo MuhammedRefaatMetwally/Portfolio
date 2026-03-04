@@ -37,7 +37,7 @@ const Contact = () => {
             <Mail size={18} /> Say Hello
           </a>
           <a
-            href="https://linkedin.com/in/muhammed-refaat"
+            href="https://www.linkedin.com/in/muhammedrefaat"
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center gap-2 px-6 py-3 rounded-xl border border-border bg-card text-foreground hover:border-primary/50 transition-colors"
@@ -45,7 +45,7 @@ const Contact = () => {
             <Linkedin size={18} /> LinkedIn
           </a>
           <a
-            href="https://github.com/muhammed-refaat"
+            href="https://github.com/MuhammedRefaatMetwally"
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center gap-2 px-6 py-3 rounded-xl border border-border bg-card text-foreground hover:border-primary/50 transition-colors"
