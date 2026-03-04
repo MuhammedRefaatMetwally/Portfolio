@@ -1,10 +1,13 @@
 import { motion } from "framer-motion";
-import { Github, Linkedin, Mail, MapPin, ArrowDown } from "lucide-react";
-
+import { Github, Linkedin, Mail, MapPin, ArrowDown, FileText } from "lucide-react";
+import { Dialog, DialogContent, DialogHeader, DialogTitle } from "@/components/ui/dialog";
+import { useState } from "react";
 
 const Hero = () => {
+  const [cvOpen, setCvOpen] = useState(false);
+
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden px-4">
+    <section className="relative min-h-screen flex items-center justify-center overflow-hidden px-4 pt-20">
       {/* Background grid */}
       <div className="absolute inset-0 opacity-[0.03]" style={{
         backgroundImage: 'linear-gradient(hsl(174 72% 50%) 1px, transparent 1px), linear-gradient(90deg, hsl(174 72% 50%) 1px, transparent 1px)',
@@ -68,6 +71,12 @@ const Hero = () => {
           transition={{ duration: 0.7, delay: 0.45 }}
           className="flex flex-wrap items-center justify-center gap-3 mb-8"
         >
+          <button
+            onClick={() => setCvOpen(true)}
+            className="flex items-center gap-2 px-4 py-2 rounded-lg bg-primary text-primary-foreground hover:bg-primary/90 transition-colors text-sm font-medium"
+          >
+            <FileText size={16} /> View CV
+          </button>
           <a href="mailto:muhammedrefaat2020@gmail.com"
             className="flex items-center gap-2 px-4 py-2 rounded-lg bg-secondary text-secondary-foreground hover:bg-primary hover:text-primary-foreground transition-colors text-sm">
             <Mail size={16} /> Email
@@ -96,6 +105,18 @@ const Hero = () => {
           </a>
         </motion.div>
       </div>
+
+      {/* CV Dialog */}
+      <Dialog open={cvOpen} onOpenChange={setCvOpen}>
+        <DialogContent className="max-w-3xl max-h-[85vh] overflow-y-auto">
+          <DialogHeader>
+            <DialogTitle className="font-mono">My CV</DialogTitle>
+          </DialogHeader>
+          <div className="flex items-center justify-center min-h-[300px] text-muted-foreground">
+            <p className="text-center">Upload your CV PDF to display it here.</p>
+          </div>
+        </DialogContent>
+      </Dialog>
     </section>
   );
 };
