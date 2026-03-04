@@ -112,9 +112,11 @@ const Hero = () => {
           <DialogHeader>
             <DialogTitle className="font-mono">My CV</DialogTitle>
           </DialogHeader>
-          <div className="flex items-center justify-center min-h-[300px] text-muted-foreground">
-            <p className="text-center">Upload your CV PDF to display it here.</p>
-          </div>
+          <iframe
+            src="/Muhammed_Refaat_Resume.pdf"
+            className="w-full h-[70vh] rounded-md border border-border"
+            title="Muhammed Refaat CV"
+          />
         </DialogContent>
       </Dialog>
     </section>
